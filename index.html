@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Subrahmanya Nayak — Enterprise AI & Technology Leader specializing in Generative AI, Agentic AI, Multi-Cloud AI Platforms and Enterprise Architecture.">
+<title>Subrahmanya Nayak | Enterprise AI & Technology Leader</title>
+<style>
+:root{
+  --bg:#07111f;--bg2:#0b1728;--panel:#101f34;--panel2:#0d1a2d;
+  --text:#edf4ff;--muted:#aab9cd;--line:rgba(190,215,255,.13);
+  --cyan:#39d7ff;--blue:#5c8cff;--violet:#9b7bff;--green:#43e0aa;
+  --max:1180px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}.container{max-width:var(--max);margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--cyan)}
+.links{display:flex;gap:22px;font-size:.92rem;color:var(--muted)}.links a:hover{color:white}
+.hero{padding:105px 0 70px;background:radial-gradient(circle at 80% 10%,rgba(57,215,255,.16),transparent 27%),radial-gradient(circle at 15% 20%,rgba(155,123,255,.12),transparent 26%),linear-gradient(180deg,#081426 0%,#07111f 100%)}
+.kicker{display:inline-flex;gap:9px;align-items:center;color:var(--cyan);font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 18px var(--green)}
+h1{font-size:clamp(2.7rem,6vw,5.8rem);line-height:1.02;letter-spacing:-.055em;max-width:1050px;margin:20px 0 22px}
+.gradient{background:linear-gradient(90deg,var(--cyan),#8fb2ff,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:850px;font-size:1.16rem;color:#c8d5e8}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{padding:13px 20px;border-radius:10px;font-weight:750;border:1px solid var(--line);display:inline-block}.btn.primary{background:linear-gradient(90deg,var(--cyan),#5d88ff);color:#06101e;border:0}.btn:hover{transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:58px}.stat{background:rgba(255,255,255,.035);border:1px solid var(--line);padding:18px;border-radius:14px}.stat strong{font-size:1.75rem;display:block;color:white}.stat span{font-size:.84rem;color:var(--muted)}
+section{padding:78px 0}.eyebrow{color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.section-title{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0 14px}.lead{color:var(--muted);max-width:850px;font-size:1.04rem}
+.grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}.card{background:linear-gradient(145deg,rgba(19,36,59,.92),rgba(10,24,43,.94));border:1px solid var(--line);border-radius:18px;padding:28px}.card h3{margin-top:0;font-size:1.22rem}.card p{color:var(--muted)}
+.pillbox{display:flex;flex-wrap:wrap;gap:9px}.pill{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025);font-size:.84rem;color:#c9d8ed}
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.impact .card strong{display:block;font-size:2rem;color:var(--cyan);margin-bottom:4px}
+.timeline{position:relative;margin-top:28px}.timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--line)}.role{position:relative;padding:0 0 28px 32px}.role:before{content:"";position:absolute;left:2px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(57,215,255,.09)}.role:last-child{padding-bottom:0}.role .date{color:var(--cyan);font-size:.86rem;font-weight:750}.role h3{margin:5px 0 3px}.role p{margin:0;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}.project{min-height:285px;padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(19,38,64,.9),rgba(8,18,32,.98));position:relative;overflow:hidden}.project:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-55px;top:-70px;background:radial-gradient(circle,rgba(57,215,255,.17),transparent 65%)}.project .num{color:var(--cyan);font-size:.8rem;font-weight:850;letter-spacing:.1em}.project h3{font-size:1.35rem;margin:10px 0}.project p{color:var(--muted);max-width:90%;font-size:.94rem}.project ul{padding-left:18px;color:#c5d2e4;font-size:.9rem}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.skills .card h3{color:var(--cyan)}
+.cert{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}.cert div{padding:14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);color:#d6e2f2;font-size:.92rem}
+.cta{background:linear-gradient(135deg,#102b48,#162651 55%,#302457);border:1px solid var(--line);border-radius:24px;padding:48px;text-align:center}.cta h2{font-size:clamp(2rem,4vw,3.4rem);margin:0 0 12px}.cta p{color:#c7d6e9;max-width:750px;margin:0 auto 25px}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.9rem}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}
+@media(max-width:850px){.links{display:none}.stats,.impact,.skills{grid-template-columns:repeat(2,1fr)}.grid2,.projects{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{padding-top:78px}.stats,.impact,.skills,.cert{grid-template-columns:1fr}.container{padding:0 17px}.cta{padding:32px 20px}.footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <a class="brand" href="#home">SUBRAHMANYA <span>NAYAK</span></a>
+  <div class="links"><a href="#about">About</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#projects">AI Work</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="home"><div class="container">
+  <div class="kicker"><span class="dot"></span> Enterprise AI & Technology Leadership</div>
+  <h1>Leading the transition from <span class="gradient">enterprise platforms</span> to <span class="gradient">production-grade AI.</span></h1>
+  <p>Enterprise AI and technology leader with 25+ years of experience spanning enterprise architecture, mission-critical platforms, cloud modernization, integration, identity and security, and Generative AI. Focused on GenAI, Agentic AI, multi-cloud AI platforms, governance, and scalable enterprise transformation.</p>
+  <div class="actions">
+    <a class="btn primary" href="#projects">Explore AI Architecture</a>
+    <a class="btn" href="#contact">Connect</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>25+</strong><span>Years in enterprise technology</span></div>
+    <div class="stat"><strong>65+</strong><span>GenAI implementations & solutions</span></div>
+    <div class="stat"><strong>&gt;99.6%</strong><span>Automation pass rate achieved</span></div>
+    <div class="stat"><strong>11+</strong><span>Recent AI, cloud & DevOps certifications</span></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="container grid2">
+  <div>
+    <div class="eyebrow">Positioning</div>
+    <h2 class="section-title">AI strategy with enterprise architecture authority.</h2>
+    <p class="lead">I combine strategic AI leadership with hands-on architecture depth to define secure, governed and reusable AI capabilities. My background bridges modern LLM systems with decades of experience in integration, SOA, IAM/IDM, middleware, security, cloud platforms and large-scale production reliability.</p>
+  </div>
+  <div class="card">
+    <h3>Primary Leadership Focus</h3>
+    <div class="pillbox">
+      <span class="pill">Enterprise AI Strategy</span><span class="pill">GenAI & Agentic AI</span>
+      <span class="pill">AI Platform Architecture</span><span class="pill">Multi-Cloud Transformation</span>
+      <span class="pill">Technology Roadmaps</span><span class="pill">Responsible AI</span>
+      <span class="pill">AI Governance & Security</span><span class="pill">Architecture Standards</span>
+      <span class="pill">Executive Stakeholder Influence</span><span class="pill">LLMOps & DevSecOps</span>
+      <span class="pill">Platform Reliability</span><span class="pill">Technical Mentoring</span>
+    </div>
+  </div>
+</div></section>
+
+<section id="impact"><div class="container">
+  <div class="eyebrow">Selected impact</div>
+  <h2 class="section-title">Business, technology and platform outcomes.</h2>
+  <div class="impact">
+    <div class="card"><strong>65+</strong><h3>GenAI implementations</h3><p>Architecture and reusable patterns across RAG, AI agents, multi-agent orchestration, multimodal AI and multi-cloud platforms.</p></div>
+    <div class="card"><strong>&gt;99.6%</strong><h3>Automation reliability</h3><p>Established end-to-end automation and regression capabilities to improve release confidence and reduce operational and certification risk.</p></div>
+    <div class="card"><strong>0 critical</strong><h3>Release defects</h3><p>Led multiple SOA and OIM releases with zero critical bugs and smooth staging and regression cycles.</p></div>
+    <div class="card"><strong>30+</strong><h3>Process improvements</h3><p>Contributed automation, performance and engineering improvements to increase project efficiency.</p></div>
+    <div class="card"><strong>OCI</strong><h3>Cloud modernization</h3><p>Modernized legacy infrastructure through OCI migration and environment automation, eliminating NFS dependencies.</p></div>
+    <div class="card"><strong>Real-time</strong><h3>Business enablement</h3><p>Led annuity portfolio integration for AdvisorCentral, expanding real-time visibility, transactions and advisor platform capabilities.</p></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="container grid2">
+  <div>
+    <div class="eyebrow">Career journey</div>
+    <h2 class="section-title">Enterprise depth. AI-era transformation.</h2>
+    <p class="lead">A career spanning enterprise software, financial services, integration, identity, middleware, cloud modernization and next-generation AI platforms.</p>
+  </div>
+  <div class="card">
+    <div class="timeline">
+      <div class="role"><div class="date">Jun 2025 – Present</div><h3>Principal Generative AI Architect — Advanced GenAI Practice</h3><p>Psitron Technologies, Bangalore. Multi-cloud GenAI architecture, RAG, AI agents, multi-agent orchestration, model evaluation, observability and Responsible AI.</p></div>
+      <div class="role"><div class="date">Jun 2011 – May 2025</div><h3>Principal Member of Technical Staff</h3><p>Oracle India — mission-critical SOA and identity platforms, architecture, release readiness, security, automation, modernization and OCI migration.</p></div>
+      <div class="role"><div class="date">1999 – 2011</div><h3>Enterprise Technology & Architecture Roles</h3><p>Experience across BEA Systems India, Innova Solutions, HCL Technologies, Binary Semantics and SCOT Software covering integration, financial services, XML platforms, Java/J2EE, performance engineering and enterprise delivery.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="eyebrow">Selected architecture work</div>
+  <h2 class="section-title">AI capabilities designed for enterprise scale.</h2>
+  <div class="projects">
+    <article class="project"><div class="num">01 / MULTI-CLOUD GENAI</div><h3>Enterprise Multi-Cloud AI Platform</h3><p>Reusable architecture patterns across AWS, Azure, GCP and OCI supporting model portability and enterprise AI adoption.</p><ul><li>AWS Bedrock & SageMaker</li><li>Azure OpenAI & AI Foundry</li><li>Google Vertex AI & Google ADK</li><li>OCI Generative AI & Vector Search</li></ul></article>
+    <article class="project"><div class="num">02 / AGENTIC AI</div><h3>AI Agents & Multi-Agent Orchestration</h3><p>Architected coordinated AI workflows for autonomous task execution using cloud-native and open-source agent ecosystems.</p><ul><li>Bedrock Agents & Azure AI Agents</li><li>LangChain & LangGraph</li><li>Google ADK, MCP & A2A</li><li>Tool calling and agent orchestration</li></ul></article>
+    <article class="project"><div class="num">03 / RAG & KNOWLEDGE</div><h3>Grounded Enterprise Knowledge Architecture</h3><p>Designed scalable RAG patterns integrating vector search, semantic retrieval and hybrid knowledge capabilities.</p><ul><li>OpenSearch Serverless</li><li>Azure AI Search</li><li>Pinecone, FAISS & MongoDB</li><li>Oracle 23ai Vector Search</li></ul></article>
+    <article class="project"><div class="num">04 / GOVERNANCE & LLMOPS</div><h3>Responsible AI, Evaluation & Observability</h3><p>Established quality, monitoring and governance patterns to support secure production adoption.</p><ul><li>LLM-as-Judge & evaluation metrics</li><li>MLflow, Evidently AI & OpenTelemetry</li><li>CloudWatch & Azure Monitor</li><li>Guardrails, encryption, audit logging & least privilege</li></ul></article>
+  </div>
+</div></section>
+
+<section id="expertise"><div class="container">
+  <div class="eyebrow">Expertise</div>
+  <h2 class="section-title">A full-stack view of enterprise AI.</h2>
+  <div class="skills">
+    <div class="card"><h3>AI Strategy & Leadership</h3><p>Enterprise AI strategy, roadmaps, adoption, architecture standards, reference frameworks, stakeholder influence and technology transformation.</p></div>
+    <div class="card"><h3>GenAI & Agentic AI</h3><p>LLMs, RAG, AI agents, multi-agent systems, MCP, A2A, tool calling, prompt engineering, multimodal AI and fine-tuning.</p></div>
+    <div class="card"><h3>Multi-Cloud AI</h3><p>AWS, Azure, GCP and OCI with Bedrock, Azure AI Foundry, Vertex AI, OCI Generative AI and modern model ecosystems.</p></div>
+    <div class="card"><h3>AI Data & Retrieval</h3><p>Vector databases, embeddings, semantic and hybrid search, knowledge architecture and retrieval reliability.</p></div>
+    <div class="card"><h3>Platform Engineering</h3><p>Cloud-native microservices, serverless, Docker, Kubernetes, Helm, Terraform, CI/CD, DevOps, LLMOps and DevSecOps.</p></div>
+    <div class="card"><h3>Enterprise Foundation</h3><p>SOA, IAM/IDM, WebLogic, enterprise integration, REST/SOAP, LDAP, Active Directory, TLS/PKCS12, Java and Python.</p></div>
+  </div>
+</div></section>
+
+<section><div class="container grid2">
+  <div>
+    <div class="eyebrow">Credentials</div>
+    <h2 class="section-title">Continuous learning across AI, cloud and platforms.</h2>
+    <p class="lead">Selected credentials supporting my focus on enterprise AI architecture, multicloud transformation and production platform engineering.</p>
+  </div>
+  <div class="card">
+    <div class="cert">
+      <div>OCI 2025 Certified Generative AI Professional</div>
+      <div>Oracle AI Vector Search Certified Professional</div>
+      <div>Oracle Fusion AI Agent Studio — Foundations Associate</div>
+      <div>OCI 2025 Certified Multicloud Architect Professional</div>
+      <div>OCI for AWS / Azure / GCP Architects — 2025</div>
+      <div>OCI DevOps Professional</div>
+      <div>Advanced Generative AI Specialization</div>
+      <div>B.E., Computer Science — Manipal Institute of Technology</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="cta">
+    <div class="eyebrow">Let's connect</div>
+    <h2>Building secure, governed and scalable AI platforms.</h2>
+    <p>Open to conversations around Director of AI Platforms, Enterprise AI Architecture, Generative AI leadership and Principal AI Architecture opportunities.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn primary" href="mailto:subbunayak2025@gmail.com">Email Me</a>
+      <a class="btn" href="https://www.linkedin.com/in/subrahmanya" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/subbunayak" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="container footer"><div><strong>Subrahmanya Nayak</strong><br>Enterprise AI & Technology Leader</div><div>GenAI · Agentic AI · Multi-Cloud AI Platforms · Enterprise Architecture</div></div></footer>
+</body>
+</html>
